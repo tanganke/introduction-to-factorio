@@ -1,0 +1,6 @@
+[book]
+authors = ["tanganke"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Introduction to Factorio"
