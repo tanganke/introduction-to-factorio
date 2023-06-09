@@ -8,3 +8,12 @@
 ## 指南特色
 
 本指南的组织结构基本与游戏进程一致，方便新玩家逐步上手。
+
+## 游戏获取
+
+<a href="https://store.steampowered.com/app/427520/Factorio/">
+    <img style="align:left; float:left; width:100px; MARGIN-RIGHT:15px" src="images/steam-square.png" ></img>
+</a>
+
+Factorio可以从steam商店购买获取，无任何内购。  
+~~也可以在玩家社区中获取试玩版，实在找不着可以联系我们。(把这句删了)~~

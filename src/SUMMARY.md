@@ -3,6 +3,7 @@
 [Factorio入门指南](./cover.md)
 
 - [开局](./start.md)
+  - [基础资源挖掘与冶炼](basic_resources.md)
   - [科技](tech.md)
 - [生产](./production.md)
   - [小作坊](workshop.md)
