@@ -255,7 +255,10 @@
 <blockquote>
 <p>游戏的默认局域网连接端口为34197，使用UDP通讯协议。</p>
 </blockquote>
-<p>这里以frp为例，简要介绍内网穿透的原理和方法。</p>
+<p>这里以frp为例，简要介绍内网穿透的原理和方法。
+frp是内网穿透软件，用以解决若干个局域网中的机器互不相连的问题，其示意图如下。
+frp共有两个可执行程序，frps和frpc，其中frps为服务器端软件，frpc为客户端软件。
+通过frps和frpc两个程序，玩家的游戏与主机游戏进程之间实现间接通信。</p>
 <center>
     <img src="images/frp.png" style="width:500px;"/>
 </center>
