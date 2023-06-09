@@ -20,5 +20,5 @@
   - [信号网络](circuit.md)
 - [开服指南](serve.md)
   - [Windows](windows.md)
-  - [Linux & WSL](linux.md)
+  - [Linux](linux.md)
 - [贡献列表](contributors.md)
