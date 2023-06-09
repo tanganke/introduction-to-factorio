@@ -3,6 +3,7 @@
 [Factorio入门指南](./cover.md)
 
 - [开局](./start.md)
+  - [科技](tech.md)
 - [生产](./production.md)
   - [量化工厂计算器](./calculator.md)
 - [电力](./electricity.md)
