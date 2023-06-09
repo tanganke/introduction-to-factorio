@@ -9,6 +9,7 @@
 - [物流运输](./transportation.md)
   - [传送带物流](belt.md)
   - [火车及铁路信号灯](./train.md)
+  - [机器人物流网络](logistic_net.md)
 - [进阶内容](advanced.md)
   - [防御虫巢](defence.md)
   - [信号网络](circuit.md)
