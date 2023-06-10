@@ -1,5 +1,7 @@
 # 火车及铁路信号灯
 
+火车是物流运输的重要工具，在资源点分布离散的情况下尤其重要。玩家也可以进入火车，由火车自动寻路方便快速地到达其他站点。
+
 以下双轨铁路遵循火车右侧通行原则。
 <!-- <iframe src="//player.bilibili.com/player.html?aid=78769279&bvid=BV1YJ411y7th&cid=134780526&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe> -->
 

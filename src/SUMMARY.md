@@ -6,8 +6,6 @@
   - [基础资源挖掘与冶炼](basic_resources.md)
   - [科技](tech.md)
 - [生产](./production.md)
-  - [小作坊](workshop.md)
-  - [总线工厂](bus.md)
   - [量化工厂计算器](./calculator.md)
   - [蓝图与建设机器人](blueprint.md)
 - [电力](./electricity.md)
