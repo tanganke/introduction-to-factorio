@@ -16,6 +16,7 @@
 - [进阶内容](advanced.md)
   - [防御虫巢](defence.md)
   - [信号网络](circuit.md)
+  - [Mod](mod.md)
 - [开服指南](serve.md)
   - [Windows](windows.md)
   - [Linux](linux.md)
