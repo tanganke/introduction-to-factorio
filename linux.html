@@ -90,11 +90,33 @@
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
                                 <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
@@ -158,6 +180,29 @@
 否则，您应该准备一台具有公网IP的Linux服务器（可以在腾讯云、阿里云等云服务器商获取）或使用Linux虚拟机/WSL+内网穿透的方案。
 建议至少是双核处理器，有2G及以上的内存，以及5Mbps及以上的带宽。</p>
 <h2 id="方法一使用docker容器"><a class="header" href="#方法一使用docker容器">方法一：使用docker容器</a></h2>
+<h3 id="安装docker"><a class="header" href="#安装docker">安装docker</a></h3>
+<p>如果你是Ubuntu用户，可以使用以下命令安装docker：</p>
+<pre><code class="language-bash">sudo apt install docker.io
+</code></pre>
+<p>这将安装Docker并启动Docker服务。您可以使用以下命令检查Docker是否已成功安装：</p>
+<pre><code class="language-bash">docker --version
+</code></pre>
+<p>如果你是其他Linux发行版的用户，请参考<a href="https://docs.docker.com/engine/install/">官方文档</a>。
+如果您需要更多关于Docker的信息，您可以查看Docker官方文档。在文档中，您可以找到有关如何使用Docker的详细信息，以及如何构建和运行Docker容器。如果您遇到任何问题，您可以在Docker论坛上寻求帮助，或者在Docker社区中与其他用户交流。</p>
+<h3 id="下载镜像"><a class="header" href="#下载镜像">下载镜像</a></h3>
+<pre><code class="language-bash">docker pull factoriotools/factorio
+</code></pre>
+<h3 id="运行容器"><a class="header" href="#运行容器">运行容器</a></h3>
+<pre><code class="language-bash">docker run -d \
+    -p 34197:34197/udp \
+    -p 27015:27015/tcp \
+    -v /opt/factorio:/factorio \
+    --name factorio \
+    --restart=always \
+    factoriotools/factorio
+</code></pre>
+<h3 id="客户端连接服务器"><a class="header" href="#客户端连接服务器">客户端连接服务器</a></h3>
+<p>在游戏主菜单中，点击“多人游戏”，然后点击“服务器直连”，在“IP地址”中输入服务器的IP地址，点击“加入游戏”即可。</p>
 <h2 id="方法二下载专用服务器程序"><a class="header" href="#方法二下载专用服务器程序">方法二：下载专用服务器程序</a></h2>
 <p><a href="https://www.factorio.com/download/archive/">从官方下载专用服务器（Headless server）</a>，请注意选择和游戏客户端对应的版本。</p>
 
