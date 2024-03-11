@@ -9,3 +9,7 @@
 ## 推荐Mod
 
 *TODO： 在此处添加一些推荐的模组介绍*
+
+1. Space Exploration  
+    [How hard is it to beat space exploration?](https://www.youtube.com/watch?v=8hRJ-CcwvrI&ab_channel=DoshDoshington)
+2. Transport Drones

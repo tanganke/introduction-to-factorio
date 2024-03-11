@@ -5,6 +5,8 @@
 这里是Factorio入门指南，旨在为新手提供对Factorio基本的认识和成为答疑解惑的工具书，以便快速入门。
 我们的目标是读者可以通过本指南学习如何建立30瓶科技瓶每分钟左右的总线工厂，至于百瓶甚至千瓶工厂的黑盒工厂，属于进阶内容，并不在本入门指南的范围内。
 
+> [Factorio teaches you software engineering, seriously.](https://youtu.be/vPdUjLqC15Q)
+
 
 ## 指南特色
 
@@ -17,4 +19,3 @@
 </a>
 
 Factorio可以从steam商店购买获取，无任何内购。  
-~~也可以在玩家社区中获取试玩版，实在找不着可以联系我们。(把这句删了)~~
